@@ -2,7 +2,6 @@
 	<meta name="description" content="E-healthy.se is an all-in-one website that everyone can find information and inspiration to be healthy">
   	<meta name="keywords" content="be healthy">
   	<meta name="author" content="Asrar Kharal, Matthanaporn Olsson,Muhamad Al-hanbali :WUE2019">
-	
 		
 	<!-- down here are the meta tag for facebook-->
 	<meta property="og:url"    content="http://www.e-healthy.se" />
