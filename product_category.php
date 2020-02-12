@@ -9,5 +9,6 @@
 
 
 <?php include('include/footer.php'); ?>	
+I've almost learned
 </body>
 </html>
