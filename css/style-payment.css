@@ -1,0 +1,313 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container {
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1rem;
+    padding: 1rem;
+
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "agree"
+        "f"
+        "g";
+}
+
+.agreement {
+    grid-area: agree;
+
+}
+
+.header {
+    grid-area: a;
+}
+
+.main_pic {
+    grid-area: b;
+}
+
+.purchase_info {
+    grid-area: c;
+}
+
+.promotion_code {
+    grid-area: d;
+}
+
+.shipping_method {
+    grid-area: e;
+}
+
+.people_buy_with {
+    grid-area: f;
+}
+
+.footer {
+    grid-area: g;
+}
+
+.section {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main_pic_picture {
+    padding: 2vw;
+
+}
+
+.main_pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_pic_picture img {
+    width: 100%;
+}
+
+.purchase_info {
+    text-align: center;
+    padding: 2rem;
+}
+
+.promotion_code {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agreement {
+    padding: 2rem;
+    background-color: rgb(252, 239, 239);
+}
+
+.agreement label {
+    font-weight: bold;
+
+}
+
+input[type="text"] {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.purchase_info {
+    background-color: #e3f3e3;
+}
+
+.product_selection_area {
+    font-size: 2vw;
+
+}
+
+.product_selection_area button {
+    width: 200px;
+    height: 5vw;
+    font-size: 2vw;
+
+    color: rgb(10, 5, 5);
+    background-color: rgb(53, 228, 53);
+    border-radius: 1rem;
+}
+
+.artical_name p {
+    color: rgb(82, 82, 82);
+    line-height: 1px;
+}
+
+.promotion_code {
+    background-color: #e3f3e3;
+}
+
+.promotion_code input {
+    width: 200px;
+}
+
+.promotion_code label {
+    font-weight: bold;
+}
+
+.shipping_method {
+    padding: 0 3rem;
+    text-align: center;
+    background-color: #e3f3e3;
+}
+
+.shipping_method_categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shipping_method_categories label {
+    padding: 0 1rem;
+    border-right: 0.51rem solid grey;
+}
+
+.shipping_method_categories label:last-child {
+    border-right: none;
+}
+
+
+.people_buy_with {
+    text-align: center;
+    background-color: #e3f3e3;
+    align-items: center;
+}
+
+.people_buy_with_pics {
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.people_buy_with_pics .pic {
+    padding: 1rem;
+    width: 15rem;
+    flex: 1 0 7%;
+}
+
+.people_buy_with_pics img {
+
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    background-color: rgb(40, 41, 41);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+}
+
+footer .foot {
+    width: 100px;
+    flex: 1 1 50%;
+    border: 1px solid grey;
+    height: auto;
+    padding: 0 2rem;
+    margin: 1rem;
+}
+
+footer li {
+    list-style: none;
+}
+
+.foot_section3 {
+    background-color: grey;
+    text-align: center;
+}
+
+.social_media_pics {
+    display: flex;
+    justify-content: center;
+
+}
+
+.social_media_pics img {
+    margin: 0 1rem;
+    ;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        font-size: 1.6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 1vw;
+        padding: 1vw;
+
+        grid-template-areas:
+            "a a"
+            "b c"
+            "d d"
+            "e e"
+            "agree agree"
+            "f f"
+            "g g";
+    }
+
+    .social_media_pics img {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        font-size: 1.6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "a a"
+            "b c"
+            "d d"
+            "e e"
+            "agree agree"
+            "f f"
+            "g g";
+    }
+
+    .social_media_pics img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    footer .foot {
+        flex: 1 1 20%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .shipping_method_categories {
+        flex-direction: column;
+        padding-bottom: 2rem;
+
+    }
+
+    .shipping_method_categories label {
+        padding: 0 1rem;
+        border-right: none;
+        border-bottom: 0.51rem solid grey;
+        padding: 1rem;
+
+    }
+
+    .shipping_method_categories label:last-child {
+        border-bottom: none;
+    }
+
+}
