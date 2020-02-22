@@ -4,10 +4,11 @@ html {
 
 body {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
 }
 
-.container {
+#main {
+    margin-top: 60px;
     font-size: 1.6rem;
     display: grid;
     grid-template-columns: 1fr;
