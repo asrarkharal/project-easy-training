@@ -96,7 +96,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgb(19, 68, 48);
     opacity: 0.9;
     overflow-x: hidden;
     padding-top: 60px;
@@ -125,12 +125,15 @@ side-nav a:hover {
     margin-left: 50px;
 }
 
-#main {
+.container {
     transition: margin-left 0.5s;
     padding: 20px;
     overflow: hidden;
     width: 100%;
 }
+
+
+
 
 @media(max-width:568px) {
     .navbar-nav {
