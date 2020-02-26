@@ -79,7 +79,7 @@ h3 {
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #110606;
     text-align: center;
     margin: 14px 16px;
     text-decoration: none;
@@ -92,8 +92,9 @@ h3 {
 }
 
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: rgba(141, 247, 138, 0.136);
     color: #000;
+    transform: scale(1.1);
 }
 
 .side-nav {
