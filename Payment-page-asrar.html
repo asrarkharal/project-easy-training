@@ -43,18 +43,18 @@
     <script>
         function openSideMenu() {
             document.getElementById('side-menu').style.width = '200px';
-            document.getElementById('main').style.marginLeft = '200px';
+            document.getElementById('mainn').style.marginLeft = '200px';
         }
 
 
         function closeSideMenu() {
             document.getElementById('side-menu').style.width = '0';
-            document.getElementById('main').style.marginLeft = '0';
+            document.getElementById('mainn').style.marginLeft = '0';
 
         }
     </script>
 
-    <main id="main" class="container">
+    <main id="mainn" class="container">
         <header class="section-header">
             <div class="logo_pic"><img src="images/e-health-logo.png" alt=""></div>
             <div class="search_bar">
@@ -74,7 +74,7 @@
 
         <section class="section purchase_info">
             <div class="product_name artical_name">
-                <h2>Mineral Omega</h2>
+                <h3>Mineral Omega</h3>
                 <p><b>Article Nr: </b>: xyz1232</p>
             </div>
             <section class="product_selection_area">
@@ -94,6 +94,19 @@
             <div>
                 <label for="promo">Promotion Code :</label>
                 <input type="text" id="promo" value="">
+            </div>
+        </section>
+
+        <section class="section email-info">
+            <div class="em">
+
+                <h3>Enter e-mail to get address automatically:</h3>
+                <form action="">
+                    <label for="emi">email</label>
+                    <input type="email" id="emi" value="">
+                    <input type="submit" id="em" value="Give email !">
+                </form>
+
             </div>
         </section>
 
@@ -143,28 +156,26 @@
         <footer class="section footer">
             <div class="foot foot_section1">
                 <ul>
-                    <li>Home</li>
-                    <li>Product Page</li>
-                    <li>Contact</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">Contacts</a></li>
                 </ul>
             </div>
             <div class="foot foot_section2">
-                <ul>
-                    <li>Adress:</li>
-                    <li>GCC Avenue 566 33 New Shark</li>
-                </ul>
+                <h3>Adress:</h3>
+                <p>Spinch Avenue Shelf 753 22 ICA</p>
             </div>
             <div class="foot foot_section3">
                 <p>Follow us:</p>
                 <div class="social_media_pics">
                     <div>
-                        <img src="https://img.icons8.com/metro/52/000000/facebook-new--v2.png">
+                        <a href="#"><img src="https://img.icons8.com/metro/52/000000/facebook-new--v2.png"></a>
                     </div>
                     <div>
-                        <img src="https://img.icons8.com/ios/50/000000/instagram-new.png">
+                        <a href="#"><img src="https://img.icons8.com/ios/50/000000/instagram-new.png"></a>
                     </div>
                     <div>
-                        <img src="https://img.icons8.com/wired/50/000000/twitter.png">
+                        <a href=""><img src="https://img.icons8.com/wired/50/000000/twitter.png"></a>
                     </div>
                 </div>
             </div>

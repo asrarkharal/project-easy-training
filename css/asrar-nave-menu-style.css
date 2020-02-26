@@ -5,12 +5,18 @@ body {
 }
 
 .section-header {
-    background-color: #02b802;
+    background-color: rgb(5, 56, 26);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    color: white;
 
+}
+
+h3 {
+    background: rgba(5, 78, 50, 0.8);
+    color: white;
 }
 
 .section-header .logo_pic {
@@ -22,6 +28,7 @@ body {
 .section-header .logo_pic img {
     width: 100%;
 }
+
 
 .navbar .purchase_cart {
     margin-right: 2rem;
