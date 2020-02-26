@@ -7,7 +7,7 @@ body {
     width: 90%;
 }
 
-#main {
+.container {
     margin-top: 60px;
     font-size: 1.6rem;
     display: grid;
@@ -26,7 +26,7 @@ body {
         "g";
 }
 
-.header {
+header {
     grid-area: a;
 }
 
@@ -107,10 +107,6 @@ input[type="submit"] {
 }
 
 
-.purchase_info {
-    background-color: #c6f5c2;
-}
-
 .product_selection_area {
     font-size: 2vw;
 
@@ -133,21 +129,18 @@ input[type="submit"] {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
-.same_product_pictures {
-    background-color: #c6f5c2;
-}
 
 .product_details {
     padding: 0 3rem;
 
     text-align: center;
-    background-color: #c6f5c2;
+
 }
 
 .related_products {
     display: flex;
     padding: 0.5rem;
-    background-color: #c6f5c2;
+
     align-items: center;
 }
 
@@ -161,7 +154,7 @@ input[type="submit"] {
 }
 
 footer {
-    background-color: rgb(40, 41, 41);
+    background-color: rgb(5, 56, 26);
     color: white;
     padding: 2rem;
     display: flex;
@@ -172,7 +165,7 @@ footer {
 footer .foot {
     width: 100px;
     flex: 1 1 50%;
-    border: 1px solid grey;
+    border: 1px solid rgb(32, 179, 142);
     height: auto;
     padding: 0 2rem;
     margin: 1rem;
@@ -184,8 +177,14 @@ footer li {
     list-style: none;
 }
 
+.foot_section1 a {
+    text-decoration: none;
+    color: white;
+    line-height: 2rem;
+}
+
 .foot_section3 {
-    background-color: grey;
+    background-color: rgb(27, 121, 105);
     text-align: center;
 
 }
