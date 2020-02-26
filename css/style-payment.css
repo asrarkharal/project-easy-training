@@ -7,24 +7,50 @@ body {
     width: 90%;
 }
 
-#main {
+.container {
     margin-top: 60px;
     font-size: 1.6rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(60px, auto);
     grid-gap: 1rem;
     padding: 1rem;
 
     grid-template-areas:
-        "a"
-        "b"
-        "c"
-        "d"
-        "e"
+        "h"
+        "pic"
+        "pi"
+        "pc"
+        "ei"
+        "sm"
         "agree"
-        "f"
-        "g";
+        "pb"
+        "foo";
+}
+
+
+header {
+    grid-area: h;
+}
+
+.main_pic {
+    grid-area: pic;
+}
+
+.purchase_info {
+    grid-area: pi;
+}
+
+.promotion_code {
+    grid-area: pc;
+}
+
+.email-info {
+    grid-area: ei;
+}
+
+.shipping_method {
+    grid-area: sm;
 }
 
 .agreement {
@@ -32,32 +58,12 @@ body {
 
 }
 
-.header {
-    grid-area: a;
-}
-
-.main_pic {
-    grid-area: b;
-}
-
-.purchase_info {
-    grid-area: c;
-}
-
-.promotion_code {
-    grid-area: d;
-}
-
-.shipping_method {
-    grid-area: e;
-}
-
 .people_buy_with {
-    grid-area: f;
+    grid-area: pb;
 }
 
 .footer {
-    grid-area: g;
+    grid-area: foo;
 }
 
 .section {
@@ -91,6 +97,19 @@ body {
     align-items: center;
 }
 
+.email-info {
+    text-align: center;
+}
+
+.email-info input[type=submit],
+input[type=email] {
+    width: 200px;
+}
+
+.email-info .em {
+    padding: 1rem;
+}
+
 .agreement {
     padding: 2rem;
     background-color: rgb(252, 239, 239);
@@ -116,9 +135,7 @@ input[type="submit"] {
     font-size: large;
 }
 
-.purchase_info {
-    background-color: #e3f3e3;
-}
+
 
 .product_selection_area {
     font-size: 2vw;
@@ -140,9 +157,7 @@ input[type="submit"] {
     line-height: 1px;
 }
 
-.promotion_code {
-    background-color: #e3f3e3;
-}
+
 
 .promotion_code input {
     width: 200px;
@@ -176,7 +191,6 @@ input[type="submit"] {
 
 .people_buy_with {
     text-align: center;
-    background-color: #e3f3e3;
     align-items: center;
 }
 
@@ -200,18 +214,18 @@ input[type="submit"] {
 }
 
 footer {
-    background-color: rgb(40, 41, 41);
+    background-color: rgb(5, 56, 26);
     color: white;
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 footer .foot {
     width: 100px;
     flex: 1 1 50%;
-    border: 1px solid grey;
+    border: 1px solid rgb(32, 179, 142);
     height: auto;
     padding: 0 2rem;
     margin: 1rem;
@@ -221,8 +235,15 @@ footer li {
     list-style: none;
 }
 
+
+.foot_section1 a {
+    text-decoration: none;
+    color: white;
+    line-height: 2rem;
+}
+
 .foot_section3 {
-    background-color: grey;
+    background-color: rgb(148, 161, 159);
     text-align: center;
 }
 
@@ -234,8 +255,10 @@ footer li {
 
 .social_media_pics img {
     margin: 0 1rem;
-    ;
+
 }
+
+
 
 @media only screen and (min-width: 768px) {
     .container {
@@ -247,13 +270,14 @@ footer li {
         padding: 1vw;
 
         grid-template-areas:
-            "a a"
-            "b c"
-            "d d"
-            "e e"
+            "h h"
+            "pic pi"
+            "pc pc"
+            "ei ei"
+            "sm sm"
             "agree agree"
-            "f f"
-            "g g";
+            "pb pb"
+            "foo foo";
     }
 
     .social_media_pics img {
@@ -269,13 +293,14 @@ footer li {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "a a"
-            "b c"
-            "d d"
-            "e e"
+            "h h"
+            "pic pi"
+            "pc pc"
+            "ei ei"
+            "sm sm"
             "agree agree"
-            "f f"
-            "g g";
+            "pb pb"
+            "foo foo";
     }
 
     .social_media_pics img {
