@@ -22,6 +22,7 @@ body {
         "pi"
         "pc"
         "ei"
+        "pm"
         "sm"
         "agree"
         "pb"
@@ -49,7 +50,11 @@ header {
     grid-area: ei;
 }
 
-.shipping_method {
+.pay_method {
+    grid-area: pm;
+}
+
+.ship_method {
     grid-area: sm;
 }
 
@@ -167,25 +172,50 @@ input[type="submit"] {
     font-weight: bold;
 }
 
-.shipping_method {
+.pay_method {
     padding: 0 3rem;
     text-align: center;
     background-color: #e3f3e3;
 }
 
-.shipping_method_categories {
+.pay_method_categories {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.shipping_method_categories label {
+.pay_method_categories label {
     padding: 0 1rem;
     border-right: 0.51rem solid grey;
 }
 
-.shipping_method_categories label:last-child {
+.pay_method_categories label:last-child {
     border-right: none;
+}
+
+.ship_method_categories {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ship_method .pic {
+
+    margin: 2rem;
+    width: 20rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.ship_method img {
+    width: 100%;
+
+}
+
+.ship_method .pic:hover {
+    background-color: rgba(0, 0, 0, 0.39)
 }
 
 
@@ -274,6 +304,7 @@ footer li {
             "pic pi"
             "pc pc"
             "ei ei"
+            "pm pm"
             "sm sm"
             "agree agree"
             "pb pb"
@@ -297,6 +328,7 @@ footer li {
             "pic pi"
             "pc pc"
             "ei ei"
+            "pm pm"
             "sm sm"
             "agree agree"
             "pb pb"
@@ -318,13 +350,13 @@ footer li {
 
 @media only screen and (max-width: 768px) {
 
-    .shipping_method_categories {
+    .pay_method_categories {
         flex-direction: column;
         padding-bottom: 2rem;
 
     }
 
-    .shipping_method_categories label {
+    .pay_method_categories label {
         padding: 0 1rem;
         border-right: none;
         border-bottom: 0.51rem solid grey;
@@ -332,7 +364,7 @@ footer li {
 
     }
 
-    .shipping_method_categories label:last-child {
+    .pay_method_categories label:last-child {
         border-bottom: none;
     }
 
