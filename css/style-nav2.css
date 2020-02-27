@@ -1,0 +1,167 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #374954;
+  color: white;
+  text-align: center;
+}
+
+#main {
+  position: relative;
+  list-style: none;
+  background: #215238;
+  font-weight: 400;
+  font-size: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0;
+  margin: 50px auto;
+}
+
+#main li {
+  font-size: 0.8rem;
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  z-index: 5;
+  min-width: 150px;
+}
+
+#main li:hover {
+  background: #2a573e;
+}
+
+li {
+  margin: 0;
+}
+
+.drop {
+  overflow: hidden;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  top: 48px;
+}
+
+.drop div {
+  -webkit-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-transition: all 0.5s 0.1s;
+  transition: all 0.5s 0.1s;
+  position: relative;
+}
+
+.drop li {
+  display: block;
+  padding: 0;
+  width: 100%;
+  background: #3e8760 !important;
+}
+
+.drop li:hover {
+  background: #7a9285 !important;
+}
+
+#marker {
+  height: 6px;
+  background: #3e8760 !important;
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  z-index: 2;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+#main li:nth-child(1):hover ul div {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#main li:nth-child(1):hover ~ #marker {
+  -webkit-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+}
+
+#main li:nth-child(2):hover ul div {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#main li:nth-child(2):hover ~ #marker {
+  -webkit-transform: translate(150px, 0);
+  transform: translate(150px, 0);
+}
+
+#main li:nth-child(3):hover ul div {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#main li:nth-child(3):hover ~ #marker {
+  -webkit-transform: translate(300px, 0);
+  transform: translate(300px, 0);
+}
+
+#main li:nth-child(4):hover ul div {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#main li:nth-child(4):hover ~ #marker {
+  -webkit-transform: translate(450px, 0);
+  transform: translate(450px, 0);
+}
+
+/*start media quiery*/
+/*change menu to toggle*/
+/*Små Mobiltelefoner Iphone5: mindre än 320px*/
+/*desktop*/
+/* Tablets såsom Ipad: mellan 960px och 768px*/
+@media only screen and (max-width: 960px) and (min-width: 413x) {
+  #marker {
+    height: 6px;
+    background: #3e8760 !important;
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  #main {
+    position: relative;
+    list-style: none;
+    background: #6bbe92;
+    font-weight: 100;
+    font-size: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0;
+    margin: 5px auto;
+  }
+  #main li {
+    font-size: 0.7rem;
+    display: inline-block;
+    position: relative;
+    padding: 5px 8px;
+    cursor: pointer;
+    z-index: 5;
+    min-width: 100px;
+  }
+  #main li:hover {
+    background: #5d9476;
+  }
+}
+
+/*Breda desktopskärmar: större än 1200px*/
+/*stop media quiery*/
+/*# sourceMappingURL=style-nav2.css.map */

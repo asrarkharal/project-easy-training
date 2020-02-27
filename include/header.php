@@ -10,9 +10,9 @@
   	<meta property="og:description"   content="E-healthy.se is an all-in-one website that everyone can find information and inspiration to be healthy" />
   	<meta property="og:image" content="img/logo.png" />
 	<meta property="og:site_name" content="E-healthy :: all-in-one to help you being healthy">
-	
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/main-style.css" rel="stylesheet" type="text/css">
 
 	<link rel="icon" href="favicon.ico" />
 	<title>Welcome to E-healthy :: all-in-one to help you being healthy</title>
