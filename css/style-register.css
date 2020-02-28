@@ -1,0 +1,66 @@
+.containerR {
+  border: 1px #333;
+  display: grid;
+  width: 90%;
+  margin: auto;
+  grid-gap: 3% 2%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat (5, minmax(160px, 1fr));
+  grid-template-areas:
+    'topBar topBar topBar'
+    'slide slide slide'
+    'register register register'
+    'boxPromotion boxPromotion boxPromotion'
+    'footer footer footer';
+}
+.legend {
+  color: #5c8b74;
+}
+.registerArea {
+  grid-area: register;
+}
+
+/* Form css*/
+fieldset {
+  width: 95%;
+  align-items: center;
+}
+.wrapper {
+  display: grid;
+  background-color: rgba(40, 134, 80, 0.81);
+  padding: 10px;
+  grid-gap: 10px;
+  /*grid-template-columns: auto auto auto;*/
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.wrapper-item {
+  background-color: rgba(79, 192, 107, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+.grid-item {
+  text-align: left;
+}
+.button2 {
+  background-color: #5c6e75;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #356844;
+  color: white;
+  border: 0px solid #1bcc88;
+}
+.button2:hover {
+  background-color: #5c8b74;
+  color: white;
+}
