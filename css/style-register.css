@@ -1,7 +1,7 @@
 .containerR {
   border: 1px #333;
   display: grid;
-  width: 90%;
+  width: 92%;
   margin: auto;
   grid-gap: 3% 2%;
   grid-template-columns: repeat(3, 1fr);
@@ -14,28 +14,41 @@
     'footer footer footer';
 }
 .legend {
-  color: #5c8b74;
+  color: #385547;
+  width: 95%;
+  padding: 50px !important;
+  color: #225e34;
 }
 .registerArea {
   grid-area: register;
+  width: 90vw;
 }
 
 /* Form css*/
+form {
+  color: #3d7c50;
+}
 fieldset {
-  width: 95%;
-  align-items: center;
+  width: 80% !important;
+  align-items: stretch;
+  padding: 5px !important;
+  border: rgba(40, 134, 80, 0.81);
 }
 .wrapper {
+  font-size: 14px;
+  justify-content: space-evenly;
   display: grid;
-  background-color: rgba(40, 134, 80, 0.81);
+  background-color: rgb(195, 235, 192);
   padding: 10px;
   grid-gap: 10px;
   /*grid-template-columns: auto auto auto;*/
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  width: 100%;
+  color: #333;
 }
 .wrapper-item {
-  background-color: rgba(79, 192, 107, 0.8);
+  background-color: rgba(65, 85, 70, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 14px;
@@ -58,9 +71,25 @@ fieldset {
   cursor: pointer;
   background-color: #356844;
   color: white;
-  border: 0px solid #1bcc88;
 }
 .button2:hover {
   background-color: #5c8b74;
   color: white;
+}
+/* smallmobiltelefoneriphone5: mindre än 320px  */
+@media screen and (max-width: 470px) {
+  .wrapper {
+    font-size: 12px;
+    padding: 0px;
+    grid-row-gap: 10px;
+    /*grid-template-columns: auto auto auto;grid-row-gap: 20px;    display: grid;
+*/
+    grid-column-gap: 10px;
+    width: auto;
+  }
+  .wrapper-item {
+    padding: 5px;
+    font-size: 12px;
+    text-align: left;
+  }
 }
