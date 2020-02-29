@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="E-healthy.se is an all-in-one website that everyone can find information and inspiration to be healthy"
+    />
+    <meta name="keywords" content="be healthy" />
+    <meta
+      name="author"
+      content="Asrar Kharal, Matthanaporn Olsson,Muhamad Al-hanbali :WUE2019"
+    />
+
+    <!-- down here are the meta tag for facebook-->
+    <meta property="og:url" content="http://www.e-healthy.se" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Welcome to www.e-healthy.se" />
+    <meta
+      property="og:description"
+      content="E-healthy.se is an all-in-one website that everyone can find information and inspiration to be healthy"
+    />
+    <meta property="og:image" content="img/logo.png" />
+    <meta
+      property="og:site_name"
+      content="E-healthy :: all-in-one to help you being healthy"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Welcome to E-healthy :: all-in-one to help you being healthy</title>
+
+    <link href="css/style-register.css" rel="stylesheet" type="text/css" />
+    <link href="css/style-homepage.css" rel="stylesheet" type="text/css" />
+    <link href="css/promotionFade.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style-navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E"
+    />
+  </head>
+
+  <body>
+    <a name="top"></a>
+    <!-- start menuNAV -->
+    <div>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">About</a>
+        <!--DropDown -->
+        <div class="dropdown">
+          <button class="dropbtn">
+            BE Inspired
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Blog</a>
+            <a href="#">Hot Issue</a>
+            <a href="#">Latest Item</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            BE Cozy
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Yoga Wear</a>
+            <a href="#">Spa Product</a>
+            <a href="#">Accessory</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            BE Strong
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Gym Equipment</a>
+            <a href="#">Muscle Booster</a>
+          </div>
+        </div>
+        <a href="register.html">Join us</a>
+        <a
+          href="javascript:void(0);"
+          style="font-size:15px;"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </div>
+    <!-- finish menuNAV -->
+
+    <!-- start cart -->
+    <div class="cart" onclick="myFunction2()"></div>
+
+    <div class="cart-list" id="myDIV">
+      <div class="cart-img"><img src="" alt="" /></div>
+      <div class="yourcart">Your Cart</div>
+      <div class="cart-description">
+        <div><li>Muscle booster</li></div>
+        <div>
+          <a href="#"> <img src="img/incart.png" alt="product"/></a>
+        </div>
+        <div>2 x Muscle booster</div>
+        <div>Total : 189 kr</div>
+        <div><a href="#">X</a></div>
+      </div>
+      <div class="cart-description">
+        <li>Muscle booster</li>
+        <div>
+          <a href="#"> <img src="img/incart.png" alt="product"/></a>
+        </div>
+        <div>2 x Muscle booster</div>
+        <div>Total : 189 kr</div>
+        <div><a href="#">X</a></div>
+      </div>
+      <div class="checkout-btn">CHECKOUT</div>
+    </div>
+    <!-- finish cart -->
+
+    <main class="containerR">
+      <section class="topBar">
+        <div class="logo">
+          <img class="img-strech" src="img/logo-bootStrap2.png" />
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="slider">
+          <ul>
+            <li>
+              <div class="image_header">
+                <a href="#">Text Promotion 1</a>
+              </div>
+              <a href="#">
+                <img src="img/slide1.jpg" />
+              </a>
+            </li>
+            <li>
+              <div class="image_header">
+                <a href="#">Text Promotion 2</a>
+              </div>
+              <a href="#">
+                <img src="img/slide2.jpg" />
+              </a>
+            </li>
+            <li>
+              <div class="image_header">
+                <a href="#">Text Promotion 3</a>
+              </div>
+              <a href="#">
+                <img src="img/slide3.jpg" />
+              </a>
+            </li>
+            <li>
+              <div class="image_header">
+                <a href="#">Text Promotion 4</a>
+              </div>
+              <a href="#">
+                <img src="img/slide4.jpg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- REGISTER -->
+
+      <section class="registerArea  ">
+        <div><h1>Be member with us</h1></div>
+        <!-- <p class="line-break margin-top-10"></p> -->
+        <div>
+          <form name="contactus" method="get">
+            <fieldset>
+              <legend>EMAIL SIGN UP FORM</legend>
+              <div class="wrapper">
+                <div class="grid-item1">
+                  Please complete all information below:
+                </div>
+                <div class="grid-item">
+                  <label for="firstname" required>Your name</label>
+                  <label
+                    ><input
+                      type="text"
+                      name="firstname"
+                      id="firstname"
+                      value=""
+                      placeholder="write your firstname here"
+                      required
+                    />
+                  </label>
+                  <label
+                    ><input
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      value=""
+                      placeholder="write your lastname here"
+                    />
+                  </label>
+                  <br />
+                </div>
+                <div class="grid-item">
+                  Your Email :
+                  <input type="email" name="emailaddress" value="" />
+                  <br />
+                  Your telephone number :
+                  <input
+                    type="text"
+                    name="telefon"
+                    id="telefon"
+                    value=""
+                    placeholder="write your telephone here please"
+                  />
+                </div>
+                <div class="grid-item">
+                  What kind of being healthy are you?
+                  <select name="subject">
+                    <option value="subject1"
+                      >I am a new beginner , want to be more healthy</option
+                    >
+                    <option value="subject2">I am a fitness lover</option>
+                    <option value="subject3">I am a yoga lover</option>
+                    <option value="subject4">I love all kind of sports</option>
+                  </select>
+                </div>
+                <div class="grid-item">
+                  More comment to us <br />
+                  <textarea
+                    rows="4"
+                    cols="50"
+                    name="comment"
+                    form="contactusform"
+                  >
+Enter more request here...</textarea
+                  >
+                </div>
+                <div class="grid-item">
+                  <input class="button2" type="submit" value="Register me" />
+                  <input class="button2" type="reset" value="Reset" />
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      <!-- FINISH REGISTER -->
+      <!-- <section class="box4">
+        <div><h1>You might like this!</h1></div>
+      </section> -->
+
+      <section class="boxPromotion">
+        <div class="container2">
+          <img
+            src="img/promotion1.jpg"
+            alt="Promotion"
+            class="image img-strech"
+          />
+          <div>
+            <div class="promotion middle">
+              <a href="#">Click to see more</a>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img
+            src="img/promotion3.jpg"
+            alt="Promotion"
+            class="image img-strech"
+          />
+          <div>
+            <div class="promotion middle">
+              <a href="#">Click to see more</a>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img
+            src="img/promotion4.jpg"
+            alt="Promotion"
+            class="image img-strech"
+          />
+          <div>
+            <div class="promotion middle">
+              <a href="#">Click to see more</a>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img
+            src="img/promotion5.jpg"
+            alt="Promotion"
+            class="image img-strech"
+          />
+          <div>
+            <div class="promotion middle">
+              <a href="#">Click to see more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="box10">
+        <div class="box6">
+          <div>
+            <img src="img/logo-Footer.png" />
+            <li>E-healthy.com <i>BE HEALTHY </i></li>
+            <li>Åsögatan 117, Stockholm</li>
+            <li>Tel : 07617171717</li>
+          </div>
+          <div class="iconSocial">
+            <a href="#!"
+              ><img src="img/online_social_media_facebook-128.png" />
+            </a>
+            <a href="#!">
+              <img src="img/twitter_online_social_media-128.png" />
+            </a>
+            <a href="#!">
+              <img src="img/instagram_online_social_media_photo-128.png" />
+            </a>
+            <a href="#!">
+              <img src="img/online_social_media_google_plus-128.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="box8">
+          <h5>QUICK LINKS</h5>
+          <li><a href="#!">About Us</a></li>
+          <li><a href="#!">Contact Us</a></li>
+          <li><a href="#!">Work with us</a></li>
+          <li><a href="register.html">Join us</a></li>
+        </div>
+        <div class="box9">
+          Copyright &copy; 2020 All Rights Reserved by
+          <a href="#">E-Healthy.com</a>
+        </div>
+      </footer>
+    </main>
+
+    <!--  go to top button  -->
+    <a class="top-link hide" href="" id="js-top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+        <path d="M12 6H0l6-6z" />
+      </svg>
+      <span class="screen-reader-text">Back to top</span>
+    </a>
+    <!--  finish go to top button  -->
+
+    <script>
+      //start NAV bar
+      function myFunction() {
+        var x = document.getElementById('myTopnav');
+        if (x.className === 'topnav') {
+          x.className += ' responsive';
+        } else {
+          x.className = 'topnav';
+        }
+      }
+      //finish shopping cart
+
+      //start shopping cart
+      function myFunction2() {
+        var y = document.getElementById('myDIV');
+
+        if (y.style.display === 'none') {
+          y.style.display = 'block';
+        } else {
+          y.style.display = 'none';
+        }
+      }
+      //finish shopping cart
+
+      //start go to top
+      const scrollToTopButton = document.getElementById('js-top');
+      const scrollFunc = () => {
+        let y = window.scrollY;
+        if (y > 0) {
+          scrollToTopButton.className = 'top-link show';
+        } else {
+          scrollToTopButton.className = 'top-link hide';
+        }
+      };
+      window.addEventListener('scroll', scrollFunc);
+      const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+          window.requestAnimationFrame(scrollToTop);
+          window.scrollTo(0, c - c / 10);
+        }
+      };
+      scrollToTopButton.onclick = function(e) {
+        e.preventDefault();
+        scrollToTop();
+      };
+      //finish go to top
+    </script>
+  </body>
+</html>
