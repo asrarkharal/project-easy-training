@@ -8,7 +8,6 @@ body {
 }
 
 .container {
-    margin-top: 60px;
     font-size: 1.6rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -22,7 +21,6 @@ body {
         "pi"
         "pc"
         "ei"
-        "pm"
         "sm"
         "agree"
         "pb"
@@ -50,11 +48,7 @@ header {
     grid-area: ei;
 }
 
-.pay_method {
-    grid-area: pm;
-}
-
-.ship_method {
+.shipping_method {
     grid-area: sm;
 }
 
@@ -67,9 +61,72 @@ header {
     grid-area: pb;
 }
 
-.footer {
+/* ------------- */
+
+.box10 {
     grid-area: foo;
+    display: grid;
+    /*height: 200px;grid-template-columns: auto;*/
+    padding: 0px;
+    grid-gap: 0%;
+    background-color: rgb(54, 49, 49);
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+        "footer1"
+        "footer3"
+        "footer4";
 }
+
+.box6 {
+    height: auto;
+    flex-basis: 60%;
+    grid-area: footer1;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-size: 0.8em;
+}
+
+.readmore {
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+.box8 a {
+    color: white;
+    text-decoration: none;
+}
+
+.box8 {
+    padding: 0;
+    /* flex-basis: 31%; */
+    grid-area: footer3;
+    color: #6bbe92;
+    justify-self: left;
+    font-size: 0.8em;
+}
+
+.box9 {
+    grid-area: footer4;
+    font-size: 0.8em;
+    align-content: center;
+    background-color: #6bbe92;
+    width: auto;
+    /* text-align: center;height: 30px;
+    width: 100%;
+    padding: 0px;*/
+}
+
+.iconSocial img {
+    width: 40px;
+}
+
+
+/* ---------------- */
+
 
 .section {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
@@ -172,50 +229,25 @@ input[type="submit"] {
     font-weight: bold;
 }
 
-.pay_method {
+.shipping_method {
     padding: 0 3rem;
     text-align: center;
     background-color: #e3f3e3;
 }
 
-.pay_method_categories {
+.shipping_method_categories {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.pay_method_categories label {
+.shipping_method_categories label {
     padding: 0 1rem;
     border-right: 0.51rem solid grey;
 }
 
-.pay_method_categories label:last-child {
+.shipping_method_categories label:last-child {
     border-right: none;
-}
-
-.ship_method_categories {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.ship_method .pic {
-
-    margin: 2rem;
-    width: 20rem;
-    padding: 1rem;
-    border: 1px solid black;
-}
-
-.ship_method img {
-    width: 100%;
-
-}
-
-.ship_method .pic:hover {
-    background-color: rgba(0, 0, 0, 0.39)
 }
 
 
@@ -273,7 +305,7 @@ footer li {
 }
 
 .foot_section3 {
-    background-color: rgba(134, 209, 198, 0.486);
+    background-color: rgb(148, 161, 159);
     text-align: center;
 }
 
@@ -304,7 +336,6 @@ footer li {
             "pic pi"
             "pc pc"
             "ei ei"
-            "pm pm"
             "sm sm"
             "agree agree"
             "pb pb"
@@ -314,6 +345,14 @@ footer li {
     .social_media_pics img {
         width: 40px;
         height: 40px;
+    }
+
+    .box10 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+            "footer1 footer3"
+            "footer4 footer4";
     }
 
 }
@@ -328,7 +367,6 @@ footer li {
             "pic pi"
             "pc pc"
             "ei ei"
-            "pm pm"
             "sm sm"
             "agree agree"
             "pb pb"
@@ -338,6 +376,14 @@ footer li {
     .social_media_pics img {
         width: 50px;
         height: 50px;
+    }
+
+    .box10 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+            "footer1 footer3"
+            "footer4 footer4";
     }
 
 }
@@ -350,13 +396,13 @@ footer li {
 
 @media only screen and (max-width: 768px) {
 
-    .pay_method_categories {
+    .shipping_method_categories {
         flex-direction: column;
         padding-bottom: 2rem;
 
     }
 
-    .pay_method_categories label {
+    .shipping_method_categories label {
         padding: 0 1rem;
         border-right: none;
         border-bottom: 0.51rem solid grey;
@@ -364,7 +410,7 @@ footer li {
 
     }
 
-    .pay_method_categories label:last-child {
+    .shipping_method_categories label:last-child {
         border-bottom: none;
     }
 

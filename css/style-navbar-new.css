@@ -1,0 +1,307 @@
+body {
+	margin: 0;
+	font-family: Arial
+}
+
+
+/* -- from asrar-nave-menu.style related to asrar header*/
+
+.search_bar input[type='text'] {
+	width: 200px;
+
+}
+
+.search_bar {
+	margin-left: 100px;
+}
+
+
+h3 {
+	background: rgba(5, 78, 50, 0.8);
+	color: white;
+}
+
+.section-header .logo_pic {
+	border: 1px solid black;
+	height: 100px;
+	width: 300px;
+
+}
+
+.section-header .logo_pic img {
+	width: 100%;
+}
+
+
+/* ---------/* -- from asrar-nave-menu.style related to asrar header
+-------*/
+body {
+	margin: 0;
+	font-family: Titillium, sans-serif;
+	position: relative;
+}
+
+.cart {
+	position: absolute;
+	top: 5px;
+	right: 50px;
+	height: 40px;
+	width: 40px;
+	background-image: url(../img/shoppingcat.png);
+	background-position: center;
+	background-size: cover;
+	z-index: 999;
+}
+
+.yourcart {
+	color: #568d5b;
+	font-size: 1.3em;
+	align-content: left;
+	padding: 10px;
+}
+
+.cart:hover {
+	cursor: pointer;
+}
+
+#myDIV {
+	text-align: center;
+	background-color: rgba(248, 248, 248, 0.9);
+	width: 40vw;
+	height: auto;
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	color: rgb(102, 101, 101);
+	z-index: 9;
+}
+
+.cart-list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	padding-top: 0px;
+	padding-left: 10px;
+}
+
+.cart-img {
+	width: auto;
+}
+
+.cart-description {
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	border-top: 1px solid #868a91 !important;
+	font-size: 0.8em;
+}
+
+.checkout-btn {
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 60px;
+	background: #79b17f;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #6da744;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(98, 177, 42, 0.7);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+	background-color: rgba(98, 177, 42, 0.5);
+	color: white;
+}
+
+.dropdown-content a:hover {
+	background-color: #62a765;
+	color: black;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+@media screen and (max-width: 768px) {
+
+	.topnav a:not(:first-child),
+	.dropdown .dropbtn {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+
+	#myDIV {
+		width: 70vw;
+		height: auto;
+		/* position: absolute;
+	  right: 10px;
+	  top: 50px;
+	*/
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.topnav.responsive {
+		position: relative;
+	}
+
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.topnav.responsive .dropdown {
+		float: none;
+	}
+
+	.topnav.responsive .dropdown-content {
+		position: relative;
+	}
+
+	.topnav.responsive .dropdown .dropbtn {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+}
+
+/* start go to top  */
+
+.top-link {
+	transition: all 0.25s ease-in-out;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: inline-flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	margin: 0 3em 3em 0;
+	border-radius: 50%;
+	padding: 0.25em;
+	width: 80px;
+	height: 80px;
+	background-color: #f8f8f8;
+}
+
+.top-link.show {
+	visibility: visible;
+	opacity: 0.5;
+}
+
+.top-link.hide {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.top-link svg {
+	fill: #000;
+	width: 24px;
+	height: 12px;
+}
+
+.top-link:hover {
+	background-color: #e8e8e8;
+}
+
+.top-link:hover svg {
+	fill: #000000;
+}
+
+.screen-reader-text {
+	position: absolute;
+	clip-path: inset(50%);
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.screen-reader-text:focus {
+	display: block;
+	top: 5px;
+	left: 5px;
+	z-index: 100000;
+	clip-path: none;
+	background-color: #eee;
+	padding: 15px 23px 14px;
+	width: auto;
+	height: auto;
+	text-decoration: none;
+	line-height: normal;
+	color: #444;
+	font-size: 1em;
+	clip: auto !important;
+}
+
+/* finish go to top  */
