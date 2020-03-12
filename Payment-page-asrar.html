@@ -3,11 +3,22 @@
 
 <head>
 	<meta charset="UTF-8" />
+	<meta name="description"
+		content="E-healthy.se is an all-in-one website that everyone can find information and inspiration to be healthy" />
+	<meta name="keywords" content="be healthy" />
+	<meta name="author" content="Asrar Kharal, Matthanaporn Olsson,Muhamad Al-hanbali :WUE2019" />
+
+	<meta property="og:url" content="http://www.e-healthy.se" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Welcome to www.e-healthy.se" />
+	<meta property="og:description"
+		content="E-healthy.se is an all-in-one website that everyone can find information and inspiration to be healthy" />
+	<meta property="og:image" content="img/logo.png" />
+	<meta property="og:site_name" content="E-healthy :: all-in-one to help you being healthy" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="favicon.ico" />
 	<link rel="stylesheet" href="css/style-navbar-new.css">
 	<link rel="stylesheet" href="css/style-payment.css">
-
-	<link rel="stylesheet" href="">
 	<title>E Health Purchase Page</title>
 </head>
 
@@ -87,6 +98,10 @@
 
 
 	<script>
+		(function () {
+			var y = document.getElementById('myDIV');
+			y.style.display = "none";
+		})();
 		//start NAV bar
 		function myFunction() {
 			var x = document.getElementById('myTopnav');
@@ -99,7 +114,8 @@
 		//finish shopping cart
 
 		//start shopping cart
-		function myFunction2() {
+		function myFunction2(a) {
+
 			var y = document.getElementById('myDIV');
 
 			if (y.style.display === 'none') {

@@ -22,7 +22,7 @@ h3 {
 }
 
 .section-header .logo_pic {
-	border: 1px solid black;
+
 	height: 100px;
 	width: 300px;
 
@@ -192,10 +192,8 @@ body {
 	#myDIV {
 		width: 70vw;
 		height: auto;
-		/* position: absolute;
-	  right: 10px;
-	  top: 50px;
-	*/
+
+
 	}
 }
 
