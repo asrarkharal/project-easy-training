@@ -1,77 +1,204 @@
-
 <!-- Mohamad-->
 <!-- Mohamad feature m -->
 <!-- Mohamad Asrar addding-->
 
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/style1.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-		<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
-		<meta charset="utf-8">
-		<meta name="viewport content="width-device-width, initial-scale=>
-		<title>Morning Test</title>
-	</head>
-	<body>
-		<div class="container1">
-			<div class="header">
-				<a href="index.html"><img src="images/logo.png"></a>
-				<input type="checkbox" id="chk">
-				<label for="chk" class="show-menu-btn">
-					<i class="fas fa-ellipsis-h"></i>
-				</label>
-				<ul class="menu">
-					<a href="#">Home</a>
-					<a href="#">Be Inspired</a>
-					<a href="#">Be Cozy</a>
-					<a href="#">Be Strong</a>
-					<a href="#">Contact</a>
-					<label for="chk" class="hide-menu-btn">
-						<i class="fas fa-times"></i>
-					</label>
-				</ul>
-			</div>
-			<div class="container">
-				<div class="contact-box">
-					<div class="left"></div>
-					<div class="right">
-						<h2>Get In Touch With Us!</h2>
-						<input type="text" class="field" placeholder="Your Name">
-						<input type="text" class="field" placeholder="Your Email">
-						<input type="text" class="field" placeholder="Phone">
-						<textarea placeholder="Message" class="field"></textarea>
-						<button class="btn">Let's Talk</button>
+
+<head>
+	<link rel="stylesheet" href="css/style-navbar-new.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+	<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
+	<meta charset="utf-8">
+	<meta name="viewport content=" width-device-width, initial-scale=>
+
+	<title>Morning Test</title>
+
+</head>
+
+<body>
+	<div class="container1">
+		<!-- Asrar working on nav on mohd file -->
+		<div>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="active" target="_parent">Home</a>
+				<a href="contact-mohammad.html" target="_parent">About</a>
+				<!--DropDown -->
+				<div class="dropdown">
+					<button class="dropbtn">
+						BE Inspired
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="register.html" target="_blank">Blog</a>
+						<a href="register.html" target="_blank">Hot Issue</a>
+						<a href="register.html" target="_blank">Latest Item</a>
 					</div>
 				</div>
+				<div class="dropdown">
+					<button class="dropbtn">
+						BE Cozy
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="category-page-mohammad.html" target="_parent">Yoga Wear</a>
+						<a href="category-page-mohammad.html" target="_parent">Spa Product</a>
+						<a href="category-page-mohammad.html" target="_parent">Accessory</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">
+						BE Strong
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="category-page-mohammad.html" target="_parent">Gym Equipment</a>
+						<a href="category-page-mohammad.html" target="_parent">Muscle Booster</a>
+					</div>
+				</div>
+				<a href="register.html" target="_blank">Join us</a>
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 			</div>
-			<div class="foot">
-				<div class="baby-foot">
-					<a href="index.html"><img src="images/logo.png"></a>
+		</div>
+		<!-- finish menuNAV -->
+
+		<!-- start cart -->
+		<div class="cart" onclick="myFunction2()"></div>
+
+		<div class="cart-list" id="myDIV">
+			<div class="cart-img"><img src="" alt="cart img" /></div>
+			<div class="yourcart">Your Cart</div>
+			<div class="cart-description">
+				<div>
+					<li>Muscle booster</li>
 				</div>
-				<div class="baby-foot">
-					<p class="contact-us">Contact Us:</p>
-					<address class="contact-us">
-						<a href="E-health@sweden.com">E-health@sweden.com</a><br>
-						<a href="tel:+46730000000">+46 730000000</a><br>
-						<a href="Address:">Address: Sweden, Stockholm 11101 Stockholm</a><br>
-					</address>
+				<div>
+					<a href="#"> <img src="img/incart.png" alt="product" /></a>
 				</div>
-				<div class="baby-foot">
-					<ul class="socicons-list">
-						<li>
-							<a href='your_url_here' target='_blank'><span class="socicon-facebook"></span></a>
-						</li>
-						<li>
-							<a href='your_url_here' target='_blank'><span class="socicon-instagram"></span></a>
-						</li>
-						<li>
-							<a href='your_url_here' target='_blank'><span class="socicon-twitter"></span></a>
-						</li>
-					</ul>
+				<div>2 x Muscle booster</div>
+				<div>Total : 189 kr</div>
+				<div><a href="#">X</a></div>
+			</div>
+			<div class="cart-description">
+				<li>Muscle booster</li>
+				<div>
+					<a href="#"> <img src="img/incart.png" alt="product" /></a>
+				</div>
+				<div>2 x Muscle booster</div>
+				<div>Total : 189 kr</div>
+				<div><a href="#">X</a></div>
+			</div>
+			<div class="checkout-btn">CHECKOUT</div>
+		</div>
+
+
+		<script>
+			(function () {
+				var y = document.getElementById('myDIV');
+				y.style.display = "none";
+			})();
+			//start NAV bar
+			function myFunction() {
+				var x = document.getElementById('myTopnav');
+				if (x.className === 'topnav') {
+					x.className += ' responsive';
+				} else {
+					x.className = 'topnav';
+				}
+			}
+			//finish shopping cart
+
+			//start shopping cart
+			function myFunction2(a) {
+
+				var y = document.getElementById('myDIV');
+
+				if (y.style.display === 'none') {
+					y.style.display = 'block';
+				} else {
+					y.style.display = 'none';
+				}
+			}
+			//finish shopping cart
+
+			//start go to top
+			const scrollToTopButton = document.getElementById('js-top');
+			const scrollFunc = () => {
+				let y = window.scrollY;
+				if (y > 0) {
+					scrollToTopButton.className = 'top-link show';
+				} else {
+					scrollToTopButton.className = 'top-link hide';
+				}
+			};
+			window.addEventListener('scroll', scrollFunc);
+			const scrollToTop = () => {
+				const c = document.documentElement.scrollTop || document.body.scrollTop;
+				if (c > 0) {
+					window.requestAnimationFrame(scrollToTop);
+					window.scrollTo(0, c - c / 10);
+				}
+			};
+			scrollToTopButton.onclick = function (e) {
+				e.preventDefault();
+				scrollToTop();
+			};
+			//finish go to top
+		</script>
+		<!--  -->
+
+		<div class="container">
+			<div class="contact-box">
+				<div class="left"></div>
+				<div class="right">
+					<h2>Get In Touch With Us!</h2>
+					<input type="text" class="field" placeholder="Your Name">
+					<input type="text" class="field" placeholder="Your Email">
+					<input type="text" class="field" placeholder="Phone">
+					<textarea placeholder="Message" class="field"></textarea>
+					<button class="btn">Let's Talk</button>
 				</div>
 			</div>
 		</div>
-	</body>
+		<footer class="box10">
+			<div class="box6">
+				<div class="box6-text">
+					<a href="index.html" target="_parent"><img src="img/logo-Footer.png" /></a>
+					<li>E-healthy.com <i>BE HEALTHY </i></li>
+					<li>Åsögatan 117, Stockholm</li>
+					<li>Tel : 07617171717</li>
+				</div>
+				<div class="iconSocial">
+					<a href="https://www.facebook.com/" target="_blank"><img
+							src="img/online_social_media_facebook-128.png" alt="facebook img" />
+					</a>
+					<a href="https://twitter.com/?lang=en" target="_blank">
+						<img src="img/twitter_online_social_media-128.png" alt="twitter img" />
+					</a>
+					<a href="https://www.instagram.com/?hl=en" target="_blank">
+						<img src="img/instagram_online_social_media_photo-128.png" alt="instagram img" />
+					</a>
+					<a href="https://aboutme.google.com/u/0/?referer=gplus" target="_blank">
+						<img src="img/online_social_media_google_plus-128.png" alt="google plus img" />
+					</a>
+				</div>
+			</div>
+
+			<div class="box8">
+				<h5>QUICK LINKS</h5>
+				<li><a href="contact-mohammad.html" target="_parent">About Us</a></li>
+				<li><a href="contact-mohammad.html" target="_parent">Contact Us</a></li>
+				<li><a href="register.html" target="_blank">Work with us</a></li>
+				<li><a href="register.html" target="_blank">Join us</a></li>
+			</div>
+			<div class="box9">
+				<p>Copyright &copy; 2020 All Rights Reserved by :</p>
+				<a href="index.html" target="_parent">E-Healthy.com</a>
+			</div>
+		</footer>
+	</div>
+</body>
+
 </html>
