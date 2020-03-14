@@ -308,3 +308,8 @@ input[type="submit"] {
         flex: 1 1 20%;
     }
 }
+
+.product_selection_area a {
+    text-decoration: none;
+    color: rgb(10, 5, 5);
+}
